@@ -1,0 +1,25 @@
+
+
+.searchbar {
+    display: block;
+} 
+.videoPreview {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.videoTitle {
+    width: 100%;
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+}
+
+.videoAuthor,
+.videoStats {
+    color: rgb(78, 78, 78);
+}
