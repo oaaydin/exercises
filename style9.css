@@ -93,9 +93,10 @@ button {
 .friendsDiv {
     background-color: aquamarine;
     width: 60%;
-    height: 270px;
     padding-top: 25px;
     margin: auto;
+    padding-bottom: 30px;
+    overflow: hidden;
 }
 
 .friendviewDiv {
