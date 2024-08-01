@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding-bottom: 1000px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.pink {
+    background-color: lightpink;
+}
+
+.c1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.c1d1 {
+    width: 200px;
+}
+
+.c1d2 {
+    width: 75px;
+}
+
+.c2 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.c2d1 {
+    width: 50px;
+}
+
+.c2d2 {
+    flex: 1;
+}
+
+.c2d3 {
+    width: 75px;
+}
+
+.c3 {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.c4 {
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid gray;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phoneDiv {
+    border: 1px solid rgb(200, 200, 200);
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.phoneInsideDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin: 5px 0 ;
+}
+.phoneNumber {
+    background-color: rgb(9, 126, 204);
+    border-radius: 20px;
+    padding: 3px 6px;
+    color: white;
+}
+
+.twitterContainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 12px;
+    padding: 0 6px;
+    box-shadow: 0 0 10px gray;
+}
+
+.twitterProfile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 6px 0;
+    justify-items: center;
+    box-shadow: 0 0 5px gray;
+}
+
+.twitterImage {
+    flex: 14;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px 0;
+}
+
+.twitterImage img {
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.twitterInfo {
+    flex: 40;
+    padding: 2px 0 2px 10px;
+}
+
+.twitterInfo p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 0 6px;
+}
+
+.p2,
+.p3 {
+    color: rgb(56, 56, 56);
+    font-size: 12px;
+    margin-top: 10px;
+    margin: 4px 0 0 6px;
+}
+
+
+.twitterButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 20;
+}
+
+.twitterButton button {
+    background-color: rgb(9, 126, 204);
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+}

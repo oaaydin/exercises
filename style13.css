@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    overflow: hidden;
+    font-family: Roboto;
+}
+.c1 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.c1d1 {
+    background-color: aqua;
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.c1d2 {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    width: 200px;
+}
+
+.c1d1 p {
+    background-color: black;
+    color: white;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row2 div {
+    background-color: black;
+    color: white;
+}
+
+.gmailContainer {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    height: 300px;
+    margin: 30px;
+    box-shadow: 0 0 5px rgb(120, 120, 120);
+    border-radius: 5px;
+    padding: 5px 0 5px 15px;
+}
+
+.labelDiv p {
+    color: rgb(120, 120, 120);
+}
+
+.gmailPreviewDiv {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    line-height: 24px;
+}
+
+.gmailPPDiv {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gmailPPDiv img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.gmailTextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.gmailHeaderDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gmailSenderDiv p {
+    letter-spacing: 0.6;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.gmailTimeDiv {
+    color: rgb(120, 120, 120);
+}
+
+.postContainer {
+    display: flex;
+    flex-direction: row;
+    width: 520px;
+    height: 190px;
+    margin: 30px;
+    padding:  10px 15px 5px 15px;
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+}
+
+.postPP {
+    width: 50px;
+    margin-left: -3px;
+}
+
+.postPP img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.postPreview {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 5px 5px 5px;
+}
+
+.postOwner {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.postOwnerName {
+    margin-right: 20px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.postOwnerNick {
+    color: rgb(71, 71, 71);
+}
+
+.postLink {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+    height: 85px;
+    margin-top: 25px;
+}
+
+.postLinkLeft {
+    flex: 1;
+    height: 100%;
+    background-color: rgb(214, 214, 214);
+}
+
+.postLinkRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 3;
+    margin-left: 10px;
+}
+
+.postLinkName {
+    color: rgb(71, 71, 71);
+}
+

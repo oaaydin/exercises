@@ -1,0 +1,95 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.div2 {
+    background-color: aquamarine;
+}
+
+.div1 {
+    background-color: lightpink;
+}
+
+.grid1 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 200px 75px;
+}
+
+.grid2 {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 50px 1fr 75px;
+}
+
+.grid3 {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.facebookGrid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+.friendProfileDiv {
+    width: 100%;
+    box-shadow:2px 2px 20px gray;
+    border-radius: 5px;
+}
+
+.profilePicture {
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.nameP {
+    font-weight: 600;
+    margin:5px 0 5px 12px;
+}
+
+.mutualFriendsGrid {
+    display: grid;
+    grid-template-columns: 1.6fr 9fr;
+    align-items: center;
+    margin-left: 12px;
+    column-gap: 5px;
+}
+
+.mutualFriendsPicture {
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.mutualP {
+    color: rgb(88, 88, 88);
+}
+
+.addFriendButton {
+    background-color: rgb(40, 141, 187);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin:10px 0 15px 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.addFriendButton:hover {
+    background-color: rgb(36, 124, 165);
+}
+
+.addFriendButton:active {
+    opacity: 70%;
+    box-shadow: 1px 1px 3px gray;
+}
