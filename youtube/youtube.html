@@ -8,41 +8,80 @@
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
 
 <body>
-    <div class="header">
+    <header>
         <div class="leftSection">
             <img src="images/header/hamburger-menu.svg" alt="menu" class="hamburgerMenuIcon">
             <img src="images/header/youtube-logo.svg" alt="youtube logo" class="youtubeIcon">
         </div>
         <div class="middleSection">
             <input type="text" placeholder="Search" class="searchbar">
-            <button class="searchButton"><img src="images/header/search.svg" alt="Search"></button>
-            <button class="voiceSearchButton"><img src="images/header/voice-search-icon.svg"
-                    alt="voice search"></button>
+            <button class="searchButton"><img src="images/header/search.svg" alt="Search">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voiceSearchButton"><img src="images/header/voice-search-icon.svg" alt="voice search">
+                <div class="tooltip">Search with your voice</div>
+            </button>
         </div>
         <div class="rightSection">
-            <img src="images/header/upload.svg" alt="upload video" class="uploadIcon">
-            <img src="images/header/youtube-apps.svg" alt="youtube apps" class="appsIcon">
-            <img src="images/header/notifications.svg" alt="notifications" class="notificationsIcon">
+            <div class="uploadDiv">
+                <img src="images/header/upload.svg" alt="upload video" class="uploadIcon">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="appsDiv">
+                <img src="images/header/youtube-apps.svg" alt="youtube apps" class="appsIcon">
+                <div class="tooltip">YouTube Apps</div>
+            </div>
+            <div class="notificationsDiv">
+                <img src="images/header/notifications.svg" alt="notifications" class="notificationsIcon">
+                <div class="notificationsNumber">3</div>
+                <div class="tooltip">Notifications</div>
+            </div>
             <img src="images/header/my-channel.jpeg" alt="my channel" class="userIcon">
         </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="sidebarLink"> <img src="images/header/home.svg" alt="">
+            <p>Home</p>
+        </div>
+        <div class="sidebarLink"> <img src="images/header/explore.svg" alt="">
+            <p>Explore</p>
+        </div>
+        <div class="sidebarLink"> <img src="images/header/subscriptions.svg" alt="">
+            <p>Subscription</p>
+        </div>
+        <div class="sidebarLink"> <img src="images/header/originals.svg" alt="">
+            <p>Originals</p>
+        </div>
+        <div class="sidebarLink"> <img src="images/header/youtube-music.svg" alt="">
+            <p>Youtube Music</p>
+        </div>
+        <div class="sidebarLink"> <img src="images/header/library.svg" alt="">
+            <p>Library</p>
+        </div>
     </div>
+
     <div class="videoGrid">
         <div class="videoPreview">
             <div class="thumbnailDiv">
-                <img src="images/thumbnail-1.webp" alt="thumbnail" class="thumbnail">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"><img src="images/thumbnail-1.webp" alt="thumbnail"
+                        class="thumbnail"></a>
+                <div>14.55</div>
             </div>
             <div class="bottomInfoDiv">
                 <div class="channelPictureDiv">
-                    <img src="images/channel-1.jpeg" alt="channel profile picture" class="channelPicture">
+                    <a href="https://www.youtube.com/@mkbhd"><img src="images/channel-1.jpeg" alt="channel profile picture" class="channelPicture"></a>
                 </div>
                 <div class="videoInfoDiv">
-                    <p class="videoTitle">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <p class="videoTitle">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    </a>
                     <p class="videoAuthor">Marques Brownlee</p>
                     <p class="videoStats">3.4M views &#183; 6 months ago</p>
                 </div>
@@ -51,14 +90,17 @@
         </div>
         <div class="videoPreview">
             <div class="thumbnailDiv">
-                <img src="images/thumbnail-2.webp" alt="thumbnail" class="thumbnail">
+                <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk"><img src="images/thumbnail-2.webp" alt="thumbnail" class="thumbnail"></a>
+                <div>8:22</div>
             </div>
             <div class="bottomInfoDiv">
                 <div class="channelPictureDiv">
                     <img src="images/channel-2.jpeg" alt="channel profile picture" class="channelPicture">
                 </div>
                 <div class="videoInfoDiv">
-                    <p class="videoTitle">Try Not To Laugh Challenge #9</p>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                        <p class="videoTitle">Try Not To Laugh Challenge #9</p>
+                    </a>
                     <p class="videoAuthor">Markiplier</p>
                     <p class="videoStats">19M views &#183; 4 years ago</p>
                 </div>
@@ -66,14 +108,17 @@
         </div>
         <div class="videoPreview">
             <div class="thumbnailDiv">
-                <img src="images/thumbnail-3.webp" alt="thumbnail" class="thumbnail">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w"><img src="images/thumbnail-3.webp" alt="thumbnail" class="thumbnail"></a>
+                <div>9:13</div>
             </div>
             <div class="bottomInfoDiv">
                 <div class="channelPictureDiv">
                     <img src="images/channel-3.jpeg" alt="channel profile picture" class="channelPicture">
                 </div>
                 <div class="videoInfoDiv">
-                    <p class="videoTitle">Craazy Tik Toks Taken Moments Before DISASTER</p>
+                    <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                        <p class="videoTitle">Craazy Tik Toks Taken Moments Before DISASTER</p>
+                    </a>
                     <p class="videoAuthor">SSSniperWolf</p>
                     <p class="videoStats">12M views &#183; 1 year ago</p>
                 </div>
@@ -82,15 +127,18 @@
         </div>
         <div class="videoPreview">
             <div class="thumbnailDiv">
-                <img src="images/thumbnail-4.webp" alt="thumbnail" class="thumbnail">
+                <a href="https://www.youtube.com/watch?v=094y1Z2wpJg"><img src="images/thumbnail-4.webp" alt="thumbnail" class="thumbnail"></a>
+                <div>22:09</div>
             </div>
             <div class="bottomInfoDiv">
                 <div class="channelPictureDiv">
                     <img src="images/channel-4.jpeg" alt="channel profile picture" class="channelPicture">
                 </div>
                 <div class="videoInfoDiv">
-                    <p class="videoTitle">
-                        The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                        <p class="videoTitle">
+                            The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+                    </a>
                     <p class="videoAuthor">Veritasium</p>
                     <p class="videoStats">18M views &#183; 4 months ago</p>
                 </div>
@@ -99,14 +147,17 @@
         </div>
         <div class="videoPreview">
             <div class="thumbnailDiv">
-                <img src="images/thumbnail-5.webp" alt="thumbnail" class="thumbnail">
+                <a href="https://www.youtube.com/watch?v=86CQq3pKSUw"><img src="images/thumbnail-5.webp" alt="thumbnail" class="thumbnail"></a>
+                <div>11:17</div>
             </div>
             <div class="bottomInfoDiv">
                 <div class="channelPictureDiv">
                     <img src="images/channel-5.jpeg" alt="channel profile picture" class="channelPicture">
                 </div>
                 <div class="videoInfoDiv">
-                    <p class="videoTitle">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+                    <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                        <p class="videoTitle">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+                    </a>
                     <p class="videoAuthor">CS Dojo</p>
                     <p class="videoStats">519K views &#183; 5 years ago</p>
                 </div>
@@ -115,14 +166,17 @@
         </div>
         <div class="videoPreview">
             <div class="thumbnailDiv">
-                <img src="images/thumbnail-6.webp" alt="thumbnail" class="thumbnail">
+                <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg"><img src="images/thumbnail-6.webp" alt="thumbnail" class="thumbnail"></a>
+                <div>19.59</div>
             </div>
             <div class="bottomInfoDiv">
                 <div class="channelPictureDiv">
                     <img src="images/channel-6.jpeg" alt="channel profile picture" class="channelPicture">
                 </div>
                 <div class="videoInfoDiv">
-                    <p class="videoTitle">Anything You Can Fit In The Circle I’ll Pay For</p>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                        <p class="videoTitle">Anything You Can Fit In The Circle I’ll Pay For</p>
+                    </a>
                     <p class="videoAuthor">Mr. Beast</p>
                     <p class="videoStats">141M views &#183; 1 year ago</p>
                 </div>

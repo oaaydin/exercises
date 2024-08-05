@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: 3000px;
+}
+
+.d1 {
+    z-index: 12;
+    position: fixed;
+    right: 100px;
+    bottom: 20px;
+    background-color: black;
+    color: white;
+}
+
+.rightSidebar {
+    z-index: 10;
+    background-color: green;
+    color: white;
+    position: fixed;
+    width: 100px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.overlay {
+    z-index: 200;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.596);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.modal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+.modal h3 {
+    font-size: 38px;
+    margin: 5px 0 0 0;
+}
+
+.modal p {
+    font-size: 30px;
+    margin: 0 0 0 0;
+}
+
+.modal button {
+    width: min-content;
+    padding: 5px 15px;
+}
+
+header {
+    background-color: rgb(231, 230, 230);
+    border-bottom: 1px solid gray;
+    z-index: 20;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 100px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.headerLeft img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.headerLeft p {
+    font-weight: 600;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.headerRight button {
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.addButton {
+    margin: 0 20px;
+    background-color: rgb(59, 59, 230);
+    color: white;
+}
+
+.messageButton {
+    background-color: rgb(201, 201, 201);
+}
+
+.leftLeftSidebar {
+    background-color: rgba(32,34,37,255);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    width: 55px;
+    padding-top: 15px;
+}
+
+.leftLeftSidebar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.rightLeftSidebar {
+    background-color: rgba(48,49,54,255);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 55px;
+    top: 60px;
+    bottom: 0;
+    width: 180px;
+    padding: 0 20px;
+    color: white;
+}
+
+.rightLeftSidebar div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightLeftSidebar div p {
+    font-size: 16px;
+}
+
+.rightLeftSidebar>p {
+    color: rgba(140,141,146,255);
+    margin-top: -1px;
+}
+
+.rightLeftSidebar img {
+    opacity: 50%;
+    width: 22px;
+    height: 22px;
+}

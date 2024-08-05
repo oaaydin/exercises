@@ -1,7 +1,16 @@
 * {
-    font-family: Roboto, Arial;
+        font-family: "Roboto";
+        font-weight: 500;
 }
 
 body {
+    height: 3000px;
     margin: 0;
+    padding: 80px 24px 0 95px;
+    background-color: rgb(247, 247, 247);
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }

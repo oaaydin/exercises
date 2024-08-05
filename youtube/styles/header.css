@@ -1,8 +1,15 @@
-.header {
+header {
+    z-index: 100;
     height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgb(231, 231, 231);
 }
 
 .leftSection {
@@ -48,6 +55,7 @@
 }
 
 .searchButton {
+    position: relative;
     height: 40px;
     width: 60px;
     border: 1px solid rgb(194, 194, 194);
@@ -56,18 +64,53 @@
     background-color: rgb(240, 240, 240);
 }
 
+.searchButton:hover .tooltip {
+    opacity: 100%;
+    bottom: -30px;
+}
+
 .searchButton img {
     height: 25px;
     margin-top: 4px;
 }
 
+.tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    transition: bottom 0.3s, opacity 0.33s;
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+.searchButton .tooltip {   
+    bottom: 0%;
+    right: 2px;
+}
+
 .voiceSearchButton {
+    position: relative;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     border: none;
     background-color: rgb(240, 240, 240);
     margin-top: 2px;
+}
+
+.voiceSearchButton .tooltip {
+    white-space: nowrap;
+    right: -45px;
+    bottom: 2px;
+}
+
+.voiceSearchButton:hover .tooltip {
+    opacity: 100%;
+    bottom: -28px;
 }
 
 .rightSection {
@@ -79,13 +122,76 @@
     flex-shrink: 0;
 }
 
+.rightSection div {
+    margin: 4px 7px 0px 3px;
+    cursor: pointer;
+}
+
+.rightSection div img {
+    width: 100%;
+}
+.notificationsDiv {
+    position: relative;
+}
+
+.notificationsNumber {
+    position: absolute;
+    text-align: center;
+    width: 14px;
+    height: 14px;
+    top: -7px;
+    right: -3px;
+    background-color: red;
+    color: white;
+    padding: 1px 1px 0px 1px;
+    border-radius: 500%;
+    font-size: 11px;
+}
+
 .appsIcon,
 .uploadIcon,
-.notificationsIcon{
+.notificationsIcon {
     height: 24px;
     margin-right: 20px;
 }
+
 .userIcon {
     height: 32px;
-    margin-right:20px ;
+    margin-right: 20px;
+}
+
+.uploadDiv,
+.appsDiv {
+    position: relative;
+}
+
+.uploadDiv .tooltip {
+    bottom: -2px;
+    right: -11px;
+}
+
+.uploadDiv:hover .tooltip {
+    bottom: -32px;
+    opacity: 100%;
+}
+
+.appsDiv .tooltip {
+    white-space: nowrap;
+    bottom: -2px;
+    right: -32px;
+}
+
+.appsDiv:hover .tooltip {
+    bottom: -32px;
+    opacity: 100%;
+}
+
+.notificationsDiv .tooltip {
+    right: -32px;
+    bottom: -2px;
+}
+
+.notificationsDiv:hover .tooltip {
+    bottom: -32px;
+    opacity: 100%;
 }

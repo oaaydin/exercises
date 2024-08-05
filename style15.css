@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 3000px;
+}
+
+.xButton {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.xButton:hover {
+    background-color: rgb(39, 39, 39);
+}
+
+.xButton:active {
+    background-color: rgb(80, 79, 79);
+}
+
+.closePageButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.bottomRight {
+    position: fixed;
+    background-color: gray;
+    bottom: 10px;
+    right: 10px;
+    width: 320px;
+    height: 180px;
+}
+
+.closeVideoButton {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.remainingTime {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    color: white;
+    background-color: black;
+    padding: 2px 5px;
+}
+
+.clothing {
+    margin: 50px 0 0 30px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.clothing img {
+    width: 300px;
+}
+
+.sale {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 4px 6px;
+}
+
+.clothingOverlay {
+    background-color: rgba(0, 0, 0, 0.548);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    bottom: 4px;
+    right: 0;
+    left: 0;
+}
+
+.clothingOverlay button {
+    padding: 6px 10px;
+    background-color: white;
+    border: 2px solid rgb(179, 179, 179);
+    cursor: pointer;
+}
